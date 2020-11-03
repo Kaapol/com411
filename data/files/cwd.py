@@ -6,4 +6,8 @@ def cwd():
   for file in os.listdir(path):
     print(file)
 
-cwd()
+def run():
+  print("Processing...")
+  cwd()
+
+run()
