@@ -1,24 +1,10 @@
-def welcome():
-    print("What type of animal are you: ")
-    animal = input()
-    print("Pride Rock welcomes you {}.".format(animal))
-    print("Come and celebrate with us!")
+for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
 
-
-welcome()
-
-def visit(place):
-    if (place == "The Elephant Graveyard"):
-        print("Oh no! There are hyenas here!")
-    else:
-        print("This place is interesting.")
-
-visit("The Elephant Graveyard")
-visit("The Jungle")
-
-def roar(num_roars):
-    for roar in range(num_roars):
-        print("roar!")
-    print("ROAR!!!")
-    
-roar(3)
+alist = [54,26,93,17,77,31,44,55,20]
+bubbleSort(alist)
+print(alist)

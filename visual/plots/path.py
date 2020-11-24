@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 def coordinate():
   print("Enter an x value: ", end="")
   x = input()
-  print("Enter an y value: ", end="")
+  print("Enter a y value: ", end="")
   y = input()
 
   tuple1 = (x, y)
@@ -26,5 +26,7 @@ def path():
 def run():
   values = path()
   plt.plot(values[0], values[1], "rx--")
+  plt.xlabel("x value")
+  plt.ylabel("y label")
   plt.show()
 run()
